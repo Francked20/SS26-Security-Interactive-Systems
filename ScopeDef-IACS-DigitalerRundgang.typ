@@ -334,11 +334,13 @@ Scopes:
   Das vereinheitlicht den Patch-Stand, ohne die lokale Operations Hoheit
   anzutasten.
 
+#pagebreak()
+
 // =============================================================================
 = Zugehörige Standards
 
 - VDI/VDE 2182 Blatt 3.3 -- Informationssicherheit in der industriellen
-  Automatisierung, Anwendungsbeispiel LDPE-Anlage (Betreiber).
+  Automatisierung.
 - ISO/IEC 27001:2024 -- Informationssicherheits-Managementsysteme,
   insbesondere Abschnitt 4 (Kontext der Organisation).
 - ISO/IEC 27002:2024 -- Informationssicherheitsmaßnahmen.
