@@ -173,9 +173,9 @@ separate Safety-SPS überwacht kritische Grenzwerte wie Druck,
 Temperatur, Füllstand über dedizierte sicherheitsgerichtete Sensoren und
 löst über fail-safe Aktoren (Not-Aus-Ventile, Druckentlastung,
 Schnellabschaltung) den sicheren Anlagenzustand aus, wenn nötig. Zu
-Diagnose-Zwecken werden Safety-Daten ausschließlich lesend über eine Data Diode an die Prozess-Leitebene gespiegelt. 
+Diagnose Zwecken werden Safety Daten ausschließlich lesend über eine Data Diode an die Prozess-Leitebene gespiegelt. 
 // =============================================================================
-= 3. Komponentenverzeichnis (Asset-Inventar)
+= 3. Komponentenverzeichnis (Asset Inventar)
 
 Die folgende Tabelle listet die Komponenten des Ausgangs-IACS mit dem Typ und die Zuordnung zur Ebene gemäß IEC-62443-Zonenmodell bzw.
 Purdue-Referenzmodell. 
@@ -255,7 +255,7 @@ Die folgende Liste zeigt die eingesetzten Protokolle mit ihrem jeweiligen Zweck.
       [Integritäts- und Nachweiszwecke.],
     [TCP/IP + HTTPS], [Standard Web Protokoll],
       [Web-Clients WC1--WC3 gegen interne Web-Anwendungen.],
-      [TLS-Verschlüsselung.],
+      [TLS Verschlüsselung.],
 
 )
 
@@ -336,7 +336,7 @@ sicherheitsgerichteten Funktionen, festgelegt im HAZOP-Prozess (eine der effekti
 == 6.2. Security for Safety
 
 Safety Funktionen sind in einer modernen Anlage längst nicht mehr isoliert: Die
-Safety-SPS wird konfiguriert, parametriert und für Diagnose-Zwecke ausgelesen.
+Safety-SPS wird konfiguriert, parametriert und für Diagnose Zwecke ausgelesen.
 Damit entsteht ein Security Risiko für die Safety Funktionen, und genau das
 adressiert „Security for Safety".
 
@@ -370,6 +370,8 @@ Fallbeispiels und nach VDI/VDE 2182 Blatt 3.3 als umgesetzt.
 - Sensoren und Aktoren vor Ort sind nur mit Werkzeug zugänglich; Auslesen
   funktioniert nur mit Spezialgeräten und passender Anwendungssoftware.
 
+#pagebreak()
+
 == 7.2. Organisation und Richtlinien
 
 - Etabliertes ISMS nach ISO/IEC 27001; LDPE-Anlagen werden im Rahmen der
@@ -384,7 +386,7 @@ Fallbeispiels und nach VDI/VDE 2182 Blatt 3.3 als umgesetzt.
 - Change Management der PLT-Betriebsbetreuung; jährliches Prozessaudit; Audit
   vor Erstinbetriebnahme nach VDI/VDE 2182 Blatt 3.3, Abschnitt 5.8.
 - Rollenspezifische Schulungen für Fachpersonal, Anwender und externe
-  Mitarbeitende, eingebunden ins QM.
+  Mitarbeitende, eingebunden ins Qualitätsmanagement.
 
 == 7.3. Netzwerksicherheit und Zonierung
 
@@ -397,6 +399,7 @@ Fallbeispiels und nach VDI/VDE 2182 Blatt 3.3 als umgesetzt.
 - Kopplung TB1 und TB2 über S1 Server mit Firewall Funktion: Historian Kommunikation ist ausschließlich von der OT in Richtung Operations Management freigegeben, die Gegenrichtung ist gesperrt.
 - Redundante Auslegung der OT-Infrastruktur: S1 Server, Router R2/R3,
   Controller TI.
+#pagebreak()
 
 == 7.4. Zugriff, Authentisierung und Remote-Access
 
@@ -428,6 +431,7 @@ Fallbeispiels und nach VDI/VDE 2182 Blatt 3.3 als umgesetzt.
 - Notfallbewältigungsplan mit definierten Rollen (PLT-Betriebsbetreuung,
   zentrale PLT-Fachbetreuung) und Eskalationswegen.
 
+#pagebreak()
 // =============================================================================
 = 8. Zuordnung der Maßnahmen zu Standard Controls
 
@@ -453,7 +457,7 @@ ist Auffindbarkeit und Auditierbarkeit bewusst ohne Wirksamkeitsbewertung.
     [Zonierung ],
       [8.22 Trennung von Netzwerken; 8.20 Netzwerksicherheitssteuerungen],
       [Practice 7 - Network Segmentation; SR 5.1 Network Segmentation (62443-3-3)],
-    [Zwei-Firewall-DMZ; FW1--FW4],
+    [Zwei-Firewall-DMZ; FW1--sFW4],
       [8.21 Sicherheit von Netzdiensten],
       [Practice 7 - Network Segmentation],
     [Server S1 als Firewall zw. TB1 und TB2; Whitelisting Historian-Datenfluss],
@@ -484,18 +488,19 @@ ist Auffindbarkeit und Auditierbarkeit bewusst ohne Wirksamkeitsbewertung.
       [8.15 Protokollierung; 8.16 Aktivitätenüberwachung],
       [Practice 15 - Event Logging and Audit; Practice 16 -- Monitoring],
     [Safety Instrumented System (SIS) mit Data Diode],
-      [8.22 Trennung von Netzwerken (für die Safety-Zone)],
+      [8.22 Trennung von Netzwerken (für die Safety Zone)],
       [Practice 7 - Zone Concept (Safety als eigene Zone)],
     [Audit nach SAT, jährlich, bei Änderungen (VDI/VDE 2182 Blatt 3.3, 5.8)],
       [5.35 Unabhängige Überprüfung der Informationssicherheit; 5.36 Konformitätsprüfung],
       [Practice 18 - Conformance Assessment],
 )
 
+#pagebreak()
 // =============================================================================
 = Referenzierte Standards
 
 - VDI/VDE 2182 Blatt 3.3 -- Informationssicherheit in der industriellen
-  Automatisierung, Anwendungsbeispiel LDPE-Anlage (Betreiber).
+  Automatisierung.
 - ISO/IEC 27001:2024 -- Informationssicherheits-Managementsysteme.
 - ISO/IEC 27002:2024 -- Informationssicherheitsmaßnahmen (Controls).
 - IEC 62443-2-1 -- Security Management System für IACS (Practices).
